@@ -1,0 +1,10 @@
+# Cloudflare Pages project configuration.
+# Create a D1 database in Cloudflare, then replace REPLACE_WITH_YOUR_D1_DATABASE_ID.
+name = "the-milleto-shop"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "the-milleto-orders"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
