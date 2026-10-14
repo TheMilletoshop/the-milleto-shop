@@ -7,4 +7,4 @@ pages_build_output_dir = "."
 [[d1_databases]]
 binding = "DB"
 database_name = "the-milleto-orders"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "f1bf5d5c-034c-4c92-b774-e9fff9e15aac"
