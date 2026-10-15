@@ -602,3 +602,156 @@ p, small, input, textarea, button, a {
   font-family: "Playfair Display", serif;
   line-height: 1.1;
 }
+
+/* =========================================
+   07. BASKET AND CHECKOUT
+   ========================================= */
+
+.checkout-section {
+  padding-top: 75px;
+  padding-bottom: 85px;
+}
+
+.checkout-section .section-heading h2 {
+  color: var(--maroon);
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.basket-panel,
+.checkout-form {
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--paper) !important;
+}
+
+.checkout-form h3 {
+  color: var(--maroon);
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.checkout-form label:not(.consent) {
+  display: block;
+  margin: 15px 0 6px;
+  color: var(--ink);
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.checkout-form input:not([type="checkbox"]),
+.checkout-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #FFFCF6;
+  color: var(--ink);
+  font-size: .9rem;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  outline: 2px solid var(--turmeric);
+  outline-offset: 1px;
+}
+
+.consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 20px 0;
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+.consent a {
+  color: var(--terracotta);
+}
+
+.pay-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.secure-note,
+.fine-print,
+.empty-basket {
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+.basket-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.basket-total strong {
+  color: var(--maroon);
+  font-size: 1.4rem;
+}
+
+.form-message {
+  font-size: .85rem;
+}
+
+/* =========================================
+   08. FOOTER
+   ========================================= */
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  background: var(--maroon) !important;
+  color: var(--cream) !important;
+  border-top: 5px solid var(--turmeric);
+}
+
+.site-footer::before {
+  content: "❋  ✦  ❋  ✦  ❋";
+  display: block;
+  padding: 8px;
+  color: var(--turmeric);
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid #F8EEDB35;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.site-footer .brand {
+  color: var(--cream) !important;
+}
+
+.site-footer .brand small,
+.site-footer p,
+.site-footer a {
+  color: var(--cream) !important;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  font-size: .85rem;
+}
