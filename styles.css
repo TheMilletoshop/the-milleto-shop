@@ -180,3 +180,74 @@ p, small, input, textarea, button, a {
   padding: 10px 17px;
   font-size: .85rem;
 }
+
+/* =========================================
+   03. VALUES BAND
+   ========================================= */
+
+.values-band {
+  position: relative;
+  overflow: hidden;
+  background: var(--leaf) !important;
+  color: var(--cream) !important;
+  border-top: 4px solid var(--turmeric);
+  border-bottom: 4px solid var(--turmeric);
+}
+
+.values-band::before,
+.values-band::after {
+  position: absolute;
+  color: var(--turmeric);
+  opacity: .6;
+  font-size: 46px;
+  pointer-events: none;
+}
+
+.values-band::before {
+  content: "❋";
+  left: 12px;
+  top: 12px;
+}
+
+.values-band::after {
+  content: "❋";
+  right: 12px;
+  bottom: 12px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.values-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 22px;
+  border-right: 1px solid #F8EEDB70;
+}
+
+.values-grid > div:last-child {
+  border-right: none;
+}
+
+.values-grid span {
+  color: var(--turmeric);
+  font-family: "Yatra One", serif;
+  font-size: 1.15rem;
+}
+
+.values-grid strong {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: var(--cream);
+}
+
+.values-grid small {
+  color: #FFF4DC;
+  font-size: .8rem;
+}
