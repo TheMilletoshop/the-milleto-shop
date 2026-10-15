@@ -61,3 +61,20 @@ h1, h2, h3 {
   background: var(--milleto-maroon);
   color: var(--milleto-cream);
 }
+/* Triangular cookie illustrations */
+.cookie-illustration {
+  width: 150px;
+  height: 140px;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(50% 0%, 100% 90%, 0% 90%);
+  background:
+    radial-gradient(circle at 40% 43%, #6b3924 0 3px, transparent 4px),
+    radial-gradient(circle at 62% 55%, #6b3924 0 4px, transparent 5px),
+    radial-gradient(circle at 49% 70%, #6b3924 0 3px, transparent 4px),
+    linear-gradient(135deg, #f4ce85, #c9863c);
+  color: transparent;
+  filter: drop-shadow(0 5px 3px #70452f40);
+  font-size: 0;
+  margin: 12px auto;
+}
