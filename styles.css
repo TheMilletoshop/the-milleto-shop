@@ -14,3 +14,50 @@
   display: block;
   flex-shrink: 0;
 }
+/* THE MILLETO — contemporary Indian artisan theme */
+:root 
+{
+  --milleto-cream: #F8EEDB;
+  --milleto-terracotta: #B8432E;
+  --milleto-turmeric: #E8AD35;
+  --milleto-indigo: #253F65;
+  --milleto-green: #667747;
+  --milleto-maroon: #70283D;
+  --milleto-ink: #34271F;
+}
+body {
+  background-color: var(--milleto-cream);
+  color: var(--milleto-ink);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}.announcement 
+{
+  background: var(--milleto-maroon);
+  color: var(--milleto-cream);
+}.button-dark 
+{
+  background: var(--milleto-terracotta);
+  color: #fffaf0;
+}.button-outline 
+{
+  border-color: var(--milleto-terracotta);
+  color: var(--milleto-terracotta);
+}.button-outline:hover 
+{
+  background: var(--milleto-terracotta);
+  color: #fffaf0;
+}.values-band 
+{
+  background: var(--milleto-green);
+  color: var(--milleto-cream);
+}.product-card 
+{
+  border-color: #ddc9a8;
+}.site-footer 
+{
+  background: var(--milleto-maroon);
+  color: var(--milleto-cream);
+}
