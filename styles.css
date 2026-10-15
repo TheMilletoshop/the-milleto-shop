@@ -755,3 +755,151 @@ p, small, input, textarea, button, a {
   gap: 20px;
   font-size: .85rem;
 }
+
+/* =========================================
+   09. MOBILE AND TABLET LAYOUT
+   ========================================= */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .hero-art {
+    min-height: 330px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .story {
+    gap: 28px;
+  }
+
+  .values-grid {
+    gap: 10px;
+  }
+
+  .values-grid > div {
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    width: calc(100% - 28px);
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand strong {
+    font-size: .95rem;
+  }
+
+  .brand small {
+    font-size: .5rem;
+    letter-spacing: .04em;
+  }
+
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-art {
+    min-height: 280px;
+  }
+
+  .art-label {
+    font-size: .75rem;
+    padding: 8px;
+  }
+
+  .hero-stamp {
+    width: 60px;
+    height: 60px;
+    font-size: .55rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .values-grid > div {
+    border-right: none;
+    border-bottom: 1px solid #F8EEDB50;
+    padding: 12px 8px;
+  }
+
+  .values-grid > div:last-child {
+    border-bottom: none;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-art {
+    min-height: 220px;
+  }
+
+  .product-info > p {
+    min-height: 0;
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+  .story-art {
+    min-height: 300px;
+  }
+
+  .pickup-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pickup-badge {
+    width: 120px;
+    height: 120px;
+  }
+
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .basket-panel,
+  .checkout-form {
+    padding: 18px;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
