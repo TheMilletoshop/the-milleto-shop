@@ -14,3 +14,79 @@
   display: block;
   flex-shrink: 0;
 }
+:root {
+  --cream: #F8EEDB;
+  --paper: #FFF9EF;
+  --terracotta: #B8432E;
+  --turmeric: #E8AD35;
+  --indigo: #253F65;
+  --leaf: #667747;
+  --maroon: #70283D;
+  --ink: #34271F;
+  --muted: #786557;
+  --border: #E1CCAB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream) !important;
+  color: var(--ink) !important;
+  font-family: "DM Sans", sans-serif !important;
+  line-height: 1.65;
+}
+
+h1, h2, h3, .story-circle {
+  font-family: "Playfair Display", Georgia, serif !important;
+  letter-spacing: -0.025em;
+}
+
+h1, h2 {
+  line-height: 1.12;
+}
+
+p, small, input, textarea, button, a {
+  font-family: "DM Sans", sans-serif;
+}
+
+.eyebrow {
+  color: var(--terracotta) !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.wrap {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.button {
+  border-radius: 5px !important;
+  font-weight: 700;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-dark {
+  background: var(--maroon) !important;
+  border: 1px solid var(--maroon) !important;
+  color: var(--paper) !important;
+}
+
+.button-outline {
+  background: transparent !important;
+  border: 1px solid var(--terracotta) !important;
+  color: var(--terracotta) !important;
+}
+
+.button-outline:hover {
+  background: var(--terracotta) !important;
+  color: white !important;
+}
