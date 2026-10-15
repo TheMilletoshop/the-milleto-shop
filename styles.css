@@ -251,3 +251,165 @@ p, small, input, textarea, button, a {
   color: #FFF4DC;
   font-size: .8rem;
 }
+
+/* =========================================
+   04. PRODUCT COLLECTION
+   ========================================= */
+
+.shop-section {
+  padding-top: 82px;
+  padding-bottom: 88px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 32px;
+}
+
+.section-heading h2 {
+  color: var(--maroon) !important;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin: 8px 0 0;
+}
+
+.section-heading > p {
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--paper) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 4px 15px #55351B0A;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px #55351B18;
+}
+
+.product-art {
+  position: relative;
+  min-height: 220px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  isolation: isolate;
+}
+
+.product-art::before {
+  content: "❋  ✦  ❋";
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 12px;
+  opacity: .35;
+  pointer-events: none;
+}
+
+.product-art::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid currentColor;
+  opacity: .3;
+  pointer-events: none;
+}
+
+.product-art > span {
+  position: relative;
+  z-index: 2;
+  align-self: stretch;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-align: center;
+}
+
+.product-info {
+  padding: 18px;
+}
+
+.product-info h3 {
+  color: var(--maroon) !important;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+
+.product-info > p {
+  color: var(--muted) !important;
+  font-size: .85rem;
+  min-height: 55px;
+}
+
+.product-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 13px;
+  margin-top: 20px;
+}
+
+.product-buy strong {
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.product-buy strong small {
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+/* Four distinct Indian-inspired flavour palettes */
+.art-cranberry {
+  background:
+    radial-gradient(ellipse at 50% 70%, #E99C7F 0 18%, transparent 19%),
+    repeating-linear-gradient(45deg, transparent 0 20px, #FFFFFF12 20px 22px),
+    #B84350 !important;
+  color: #FFF2D9 !important;
+}
+
+.art-chocolate {
+  background:
+    radial-gradient(ellipse at 50% 70%, #BD8658 0 18%, transparent 19%),
+    repeating-linear-gradient(135deg, transparent 0 20px, #E8AD3520 20px 22px),
+    #57382C !important;
+  color: #F9E3B6 !important;
+}
+
+.art-coconut {
+  background:
+    radial-gradient(ellipse at 50% 70%, #E8CBA0 0 18%, transparent 19%),
+    repeating-linear-gradient(45deg, transparent 0 20px, #FFFFFF18 20px 22px),
+    #276B67 !important;
+  color: #FFF4DC !important;
+}
+
+.art-cardamom {
+  background:
+    radial-gradient(ellipse at 50% 70%, #E4AD5B 0 18%, transparent 19%),
+    repeating-linear-gradient(135deg, transparent 0 20px, #FFFFFF22 20px 22px),
+    #D9A33B !important;
+  color: #493329 !important;
+}
