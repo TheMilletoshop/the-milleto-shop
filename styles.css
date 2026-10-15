@@ -903,3 +903,201 @@ p, small, input, textarea, button, a {
     flex-direction: column;
   }
 }
+
+/* =========================================
+   HERO — INDIAN MILLET STILL LIFE
+   ========================================= */
+
+.india-hero {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  min-height: 440px;
+  overflow: hidden;
+  border: 1px solid #D9B780;
+  border-radius: 180px 180px 8px 8px;
+
+  background:
+    radial-gradient(ellipse at 72% 72%, #E8C58A 0%, transparent 43%),
+    repeating-linear-gradient(
+      45deg,
+      transparent 0 24px,
+      #B8432E0A 24px 26px
+    ),
+    #F6E6C8;
+}
+
+/* Decorative sun */
+.india-sun {
+  position: absolute;
+  top: 48px;
+  right: 70px;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: #E8AD35;
+  opacity: .85;
+}
+
+/* Arch inspired by Indian architectural silhouettes */
+.india-arch {
+  position: absolute;
+  z-index: -1;
+  right: 45px;
+  top: 95px;
+  width: 210px;
+  height: 260px;
+  border: 7px solid #B8432E;
+  border-bottom: 0;
+  border-radius: 110px 110px 0 0;
+  opacity: .18;
+}
+
+.india-arch::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  top: 34px;
+  bottom: 0;
+  border: 2px solid #B8432E;
+  border-bottom: 0;
+  border-radius: 90px 90px 0 0;
+}
+
+/* Small brand label */
+.india-kicker {
+  position: absolute;
+  z-index: 3;
+  top: 22px;
+  left: 22px;
+  color: #70283D;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+/* Millet illustration */
+.millet-botanical {
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  left: 0;
+  width: 38%;
+  max-width: 180px;
+  height: auto;
+}
+
+/* Plate and chai */
+.india-still-life {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: -2%;
+  width: 91%;
+  max-width: 440px;
+  height: auto;
+  overflow: visible;
+}
+
+/* Decorative accents */
+.india-motif {
+  position: absolute;
+  z-index: 3;
+  color: #B8432E;
+  pointer-events: none;
+}
+
+.motif-one {
+  top: 78px;
+  left: 35%;
+  font-size: 35px;
+}
+
+.motif-two {
+  right: 22px;
+  bottom: 24px;
+  color: #667747;
+  font-size: 28px;
+}
+
+/* Caption on the illustration */
+.india-caption {
+  position: absolute;
+  z-index: 4;
+  left: 20px;
+  bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 145px;
+  padding: 12px;
+  background: #FFF9EFED;
+  border-left: 3px solid #B8432E;
+}
+
+.india-caption span {
+  color: #B8432E;
+  font-size: .56rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.india-caption strong {
+  color: #34271F;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: .9rem;
+  line-height: 1.35;
+}
+
+/* Mobile positioning */
+@media (max-width: 600px) {
+  .india-hero {
+    min-height: 340px;
+    border-radius: 130px 130px 8px 8px;
+  }
+
+  .india-sun {
+    width: 80px;
+    height: 80px;
+    top: 48px;
+    right: 35px;
+  }
+
+  .india-arch {
+    width: 150px;
+    height: 190px;
+    right: 18px;
+  }
+
+  .india-still-life {
+    width: 100%;
+    right: -8%;
+  }
+
+  .millet-botanical {
+    width: 35%;
+    left: -3%;
+  }
+
+  .india-kicker {
+    font-size: .53rem;
+    left: 15px;
+    top: 18px;
+  }
+
+  .india-caption {
+    left: 12px;
+    bottom: 12px;
+    max-width: 115px;
+    padding: 8px;
+  }
+
+  .india-caption strong {
+    font-size: .76rem;
+  }
+
+  .motif-one {
+    font-size: 24px;
+  }
+}
