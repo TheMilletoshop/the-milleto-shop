@@ -516,3 +516,89 @@ p, small, input, textarea, button, a {
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
 }
+
+/* =========================================
+   06. LOCAL PICKUP
+   ========================================= */
+
+.pickup-band {
+  position: relative;
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 28px,
+      #FFFFFF09 28px 30px
+    ),
+    var(--terracotta) !important;
+  color: var(--cream) !important;
+  border-top: 5px solid var(--turmeric);
+  border-bottom: 5px solid var(--turmeric);
+}
+
+.pickup-band::after {
+  content: "✦  ❋  ✦";
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  color: var(--turmeric);
+  font-size: 28px;
+  letter-spacing: 8px;
+  opacity: .7;
+  pointer-events: none;
+}
+
+.pickup-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.pickup-inner .eyebrow {
+  color: #FFE0A1 !important;
+}
+
+.pickup-inner h2 {
+  max-width: 560px;
+  color: #FFF5E2 !important;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.pickup-inner p:not(.eyebrow) {
+  max-width: 550px;
+  color: #FFF1DF !important;
+}
+
+.pickup-badge {
+  flex-shrink: 0;
+  width: 145px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--turmeric);
+  outline: 1px solid #FFF5E280;
+  outline-offset: 5px;
+  border-radius: 50%;
+  background: var(--maroon);
+  color: var(--cream);
+  text-align: center;
+}
+
+.pickup-badge span,
+.pickup-badge small {
+  font-size: .65rem;
+  letter-spacing: .12em;
+}
+
+.pickup-badge strong {
+  margin: 5px 0;
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+}
